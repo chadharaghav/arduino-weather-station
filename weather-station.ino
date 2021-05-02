@@ -40,7 +40,6 @@ void printToLCD() {
 
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   HT.begin();
   lcd.begin(16, 2);
@@ -48,7 +47,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   humidity = HT.readHumidity();
   temp_celcius = HT.readTemperature();
   temp_faren = HT.readTemperature(true);
